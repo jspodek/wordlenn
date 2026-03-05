@@ -15,11 +15,11 @@ log = logging.getLogger(__name__)
 
 log.debug('Importing Wordle')
 import wordle
+log.debug("Successfully imported wordle")
 
 def main():
     pass
 
 if __name__ == "__main__":
-    game = wordle.Wordle('apple')
-
-    game.turn('banan')
+    game = wordle.Wordle()
+    game.game_loop()
